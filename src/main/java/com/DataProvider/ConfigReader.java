@@ -17,7 +17,8 @@ public class ConfigReader
 		{
 			Reporter.log("Issue with loading the Config.properties file "+e.getMessage());;
 		}
-		return key;
+		String value = property.getProperty(key);
+		return value;
 	}
 	
 }
