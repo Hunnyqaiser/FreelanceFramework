@@ -16,8 +16,7 @@ public class LoginPage
 	protected By pass_field = By.xpath("//input[@name='password1']");
 	protected By login_btn = By.xpath("//button[normalize-space()='Log in']");
 	protected By signIn_btn = By.xpath("//button[@class='submit-btn']");
-	
-	
+
 	public HomePage loginToApp(String user_name, String password)
 	{
 		Utility.waitForElement(driver, menu_btn).click();

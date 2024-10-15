@@ -1,10 +1,13 @@
 package com.Factory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Reporter;
+
+import com.DataProvider.ConfigReader;
 
 public class BrowserFactory 
 {
@@ -18,11 +21,19 @@ public class BrowserFactory
 	public static WebDriver getBrowser(String browser, String appURL) 
 	{
 		if(browser.equalsIgnoreCase("Chrome")|| browser.equalsIgnoreCase("Google Chrome"))
+		{
+			ChromeOptions options=new ChromeOptions();
+			
+			if(ConfigReader.getPropertyvalue("HeadlessMode").equalsIgnoreCase("true"))
 			{
-				Reporter.log("running getBrowser from Browser factory", true);
-				driver =new ChromeDriver();
-				Reporter.log("Chrome Loaded", true);
+				options.addArguments("--headless=new");
+				
+				Reporter.log("Chrome is running in Headless Mode!!, you can change the setting in Config file", true);
 			}
+			
+				driver =new ChromeDriver(options);
+			}
+		
 		else if (browser.equalsIgnoreCase("FireFox")||browser.equalsIgnoreCase("Mozilla Firefox"))
 		{
 			driver=new FirefoxDriver();
