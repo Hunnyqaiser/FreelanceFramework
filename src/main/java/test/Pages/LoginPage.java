@@ -1,11 +1,10 @@
-package com.Pages;
+package test.Pages;
+import com.Helper.Utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import com.Helper.Utility;
 
 
-
-public class LoginPage 
+public class LoginPage
 {
 	WebDriver driver;
 	public LoginPage(WebDriver driver)
@@ -21,8 +20,8 @@ public class LoginPage
 	
 	public void loginToApp()
 	{
-		driver.findElement(menu_btn).click();
-		driver.findElement(login_btn).click();
+		Utility.waitForElement(driver, menu_btn).click();
+		Utility.waitForElement(driver, login_btn).click();
 		}
 
 }
