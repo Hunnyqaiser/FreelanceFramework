@@ -12,16 +12,22 @@ public class LoginPage
 		this.driver=driver;
 	}
 	protected By menu_btn = By.xpath("//img[@alt='menu']");
-	protected By user_field = By.xpath("");
-	protected By pass_field = By.xpath("");
+	protected By user_field = By.xpath("//input[@id='email1']");
+	protected By pass_field = By.xpath("//input[@name='password1']");
 	protected By login_btn = By.xpath("//button[normalize-space()='Log in']");
-	protected By forgot_pass = By.xpath("");
+	protected By signIn_btn = By.xpath("//button[@class='submit-btn']");
 	
 	
-	public void loginToApp()
+	public HomePage loginToApp(String user_name, String password)
 	{
 		Utility.waitForElement(driver, menu_btn).click();
 		Utility.waitForElement(driver, login_btn).click();
+		Utility.waitForElement(driver, user_field).sendKeys(user_name);
+		Utility.waitForElement(driver, pass_field).sendKeys(password);
+		Utility.waitForElement(driver, signIn_btn).click();
+
+		HomePage home=new HomePage(driver);
+		return home;
 		}
 
 }
