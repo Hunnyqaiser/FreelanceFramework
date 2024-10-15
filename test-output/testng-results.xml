@@ -5,9 +5,6 @@
       <![CDATA[seting up Browser, running before class!!]]>
     </line>
     <line>
-      <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
-    </line>
-    <line>
       <![CDATA[before driver.get url!!!!!]]>
     </line>
     <line>
@@ -26,18 +23,15 @@
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-15T23:16:34 BST" name="Default suite" finished-at="2024-10-15T23:16:48 BST" duration-ms="14305">
+  <suite started-at="2024-10-15T23:29:41 BST" name="Default suite" finished-at="2024-10-15T23:29:57 BST" duration-ms="15664">
     <groups>
     </groups>
-    <test started-at="2024-10-15T23:16:34 BST" name="Default test" finished-at="2024-10-15T23:16:48 BST" duration-ms="14305">
+    <test started-at="2024-10-15T23:29:41 BST" name="Default test" finished-at="2024-10-15T23:29:57 BST" duration-ms="15664">
       <class name="test.Tests.LoginTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:16:34 BST" name="browserSetup" finished-at="2024-10-15T23:16:37 BST" duration-ms="3320" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:29:41 BST" name="browserSetup" finished-at="2024-10-15T23:29:45 BST" duration-ms="4091" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
-            </line>
-            <line>
-              <![CDATA[Chrome is running in Headless Mode!!, you can change the setting in Config file]]>
             </line>
             <line>
               <![CDATA[before driver.get url!!!!!]]>
@@ -53,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:16:38 BST" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-15T23:16:48 BST" duration-ms="10193" status="PASS">
+        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:29:46 BST" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-15T23:29:56 BST" duration-ms="10753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginToApp -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:16:48 BST" name="teardownBrowser" finished-at="2024-10-15T23:16:48 BST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:29:56 BST" name="teardownBrowser" finished-at="2024-10-15T23:29:57 BST" duration-ms="166" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>
