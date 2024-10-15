@@ -17,7 +17,7 @@ public class BaseClass
 		String browserToUse= ConfigReader.getPropertyvalue("browser");
 		String url=ConfigReader.getPropertyvalue("appURL");
 		Reporter.log("seting up Browser, running before class!!", true);
-		driver = BrowserFactory.getBrowser("Chrome", url);
+		driver = BrowserFactory.getBrowser(browserToUse, url);
 		Reporter.log("Browser is up and running, running before class!!", true);		
 
 	}
