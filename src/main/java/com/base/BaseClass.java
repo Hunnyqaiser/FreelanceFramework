@@ -9,7 +9,7 @@ import com.Factory.BrowserFactory;
 
 public class BaseClass 
 {
-	public WebDriver driver;
+	protected WebDriver driver;
 	
 	@BeforeClass
 	public void browserSetup()
