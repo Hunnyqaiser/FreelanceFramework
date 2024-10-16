@@ -15,8 +15,6 @@ public class LoginTest extends BaseClass
 		HomePage home=new HomePage(driver);
 		login.loginToApp(email, pass);
 		home.welcomeMsgShows();
-
-
 	}
 	
 
