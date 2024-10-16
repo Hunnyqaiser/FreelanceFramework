@@ -43,7 +43,7 @@ public class Utility
 	    }
 	    public static WebElement waitForElement(WebDriver driver ,By locator)
 	    {
-	        WebDriverWait wait=new WebDriverWait( driver, Duration.ofSeconds(20));
+	        WebDriverWait wait=new WebDriverWait( driver, Duration.ofSeconds(30));
 	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 	        String highLightcondition= ConfigReader.getPropertyvalue("HighLighter");
 	        if(highLightcondition.equalsIgnoreCase("True"))
@@ -52,6 +52,19 @@ public class Utility
 	        }
 	        return element;
 	    }
+	    
+	    public static WebElement waitForElement(WebDriver driver ,By locator, int timeinseconds)
+	    {
+	        WebDriverWait wait=new WebDriverWait( driver, Duration.ofSeconds(timeinseconds));
+	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+	        String highLightcondition= ConfigReader.getPropertyvalue("HighLighter");
+	        if(highLightcondition.equalsIgnoreCase("True"))
+	        {
+	            highLightWebElement(driver, element);
+	        }
+	        return element;
+	    }
+	    
 	    public static String currentDate()
 	    {
 	        SimpleDateFormat myformat=new SimpleDateFormat("HH_mm_ss_MM_yyyy");

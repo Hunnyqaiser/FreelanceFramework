@@ -2,6 +2,7 @@ package test.Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 import com.Helper.Utility;
 
@@ -31,7 +32,21 @@ public void registerUser(String name, String email, String pass, String intrest,
 	Utility.selectByValue(driver, statetoselect, state);
 	Utility.selectByValue(driver, hobbies_field, hobby);
 	Utility.waitForElement(driver, signup_btn).click();
-	Utility.waitForElement(driver, successful_msg).isDisplayed();
+}
+
+public boolean signUpMess()
+{
+	boolean status = false;
 	
+	try {
+		status = Utility.waitForElement(driver, successful_msg, 10).isDisplayed();
+	} 
+	catch (Exception e)
+	{
+		Reporter.log(""+e.getMessage());
+	}
+	
+
+	return status;
 }
 }

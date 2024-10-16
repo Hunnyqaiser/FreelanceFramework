@@ -36,6 +36,8 @@ public class LoginPage
 	
 	public Sign_upPage clickOnSignUpButton()
 	{
+		Utility.waitForElement(driver, menu_btn).click();
+		Utility.waitForElement(driver, login_btn).click();
 		Utility.waitForElement(driver, signUp_btn).click();
 		Sign_upPage signup=new Sign_upPage(driver);
 		return signup;
