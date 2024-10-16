@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
@@ -56,6 +57,24 @@ public class Utility
 	        SimpleDateFormat myformat=new SimpleDateFormat("HH_mm_ss_MM_yyyy");
 	        String newFormat=myformat.format(new Date());
 	        return newFormat;
+	    }
+	    
+	    public static void selectByValue(WebDriver driver, By locator, String valueToSelect) 
+	    {
+	    	Select select=new Select(Utility.waitForElement(driver, locator));
+	    	select.selectByValue(valueToSelect);
+	    	
+	    }
+	    
+	    public static void selectByValue(WebDriver driver, By locator, int intToSelect) 
+	    {
+	    	Select select=new Select(Utility.waitForElement(driver, locator));
+	    	select.selectByIndex(intToSelect);
+	    }
+	    public static void selectByVisibleText(WebDriver driver, By locator, String visibleTextToSelect) 
+	    {
+	    	Select select=new Select(Utility.waitForElement(driver, locator));
+	    	select.selectByVisibleText(visibleTextToSelect);
 	    }
 	
 
