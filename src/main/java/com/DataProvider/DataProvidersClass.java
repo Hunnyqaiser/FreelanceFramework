@@ -15,7 +15,7 @@ public class DataProvidersClass
 	@DataProvider(name= "TestDataForAddingUser")
 	public static Object[][] getDataForAddUser()
 	{
-		Object[][] arr=	ExcelReader.getDataFromExcel("AddUserData");
+		Object[][] arr=	ExcelReader.getDataFromExcel("RegisterUserData");
 		return arr;
 	}
 
