@@ -15,8 +15,7 @@ public class HomePage {
     protected By welcome_msg = By.xpath("//h4[normalize-space()='Welcome Admin Manager to Learn Automation Courses']");
     protected By menu_btn = By.xpath("//img[@alt='menu']");
     protected By logout_btn = By.xpath("//button[normalize-space()='Sign out']");
-
-
+    protected By cources_name_list = By.xpath("//div[@class='bottom-div col-lg-24']//h2"); //also "//div[@class='course-card row']"
     public void welcomeMsgShows()
     {
         Assert.assertTrue(Utility.waitForElement(driver, welcome_msg).isDisplayed());
