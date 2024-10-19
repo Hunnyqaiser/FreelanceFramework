@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.Tests.LoginTest" class="method navigator-link" hash-for-method="validLoginToApp(admin@email.com, admin@123)">validLoginToApp(admin@email.com, admin@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="test.Tests.AddingNewCourse" class="method navigator-link" hash-for-method="checkTheCoursedAlreadyAvailble">checkTheCoursedAlreadyAvailble</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,15 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.Tests.LoginTest</span>
+              <span class="class-name">test.Tests.AddingNewCourse</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validLoginToApp(admin@email.com, admin@123)">
-                  </a> <!-- validLoginToApp(admin@email.com, admin@123) -->
-                  <span class="method-name">validLoginToApp</span>
-                  <span class="parameters">(admin@email.com,admin@123)</span>
+                  <a name="checkTheCoursedAlreadyAvailble">
+                  </a> <!-- checkTheCoursedAlreadyAvailble -->
+                  <span class="method-name">checkTheCoursedAlreadyAvailble</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/p4/4zfzsk95791d738m1llcl1m80000gn/T/testng-eclipse--1847873708/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/p4/4zfzsk95791d738m1llcl1m80000gn/T/testng-eclipse-875721856/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.Tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;test.Tests.AddingNewCourse&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkTheCoursedAlreadyAvailble&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- test.Tests.AddingNewCourse --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,9 +191,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLoginToApp')
-data.setCell(0, 2, 'test.Tests.LoginTest')
-data.setCell(0, 3, 10753);
+data.setCell(0, 1, 'checkTheCoursedAlreadyAvailble')
+data.setCell(0, 2, 'test.Tests.AddingNewCourse')
+data.setCell(0, 3, 10888);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -206,6 +209,12 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkTheCoursedAlreadyAvailble</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">size of list is 6</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -221,18 +230,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.Tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.Tests.AddingNewCourse</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">browserSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">validLoginToApp(admin@email.com, admin@123)</span>
-                <span class="method-start">4720 ms</span>
+                <span class="method-name">checkTheCoursedAlreadyAvailble</span>
+                <span class="method-start">4285 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardownBrowser</span>
-                <span class="method-start">15475 ms</span>
+                <span class="method-start">15175 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
