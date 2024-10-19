@@ -16,7 +16,7 @@ public class LoginPage
 	protected By pass_field = By.xpath("//input[@name='password1']");
 	protected By login_btn = By.xpath("//button[normalize-space()='Log in']");
 	protected By signIn_btn = By.xpath("//button[@class='submit-btn']");
-
+	protected By signUp_btn = By.xpath("//a[normalize-space()='New user? Signup']");
 	public HomePage loginToApp(String user_name, String password)
 	{
 		Utility.waitForElement(driver, menu_btn).click();
@@ -28,5 +28,14 @@ public class LoginPage
 		HomePage home=new HomePage(driver);
 		return home;
 		}
+	
+	public Sign_upPage clickOnSignUpButton()
+	{
+		Utility.waitForElement(driver, menu_btn).click();
+		Utility.waitForElement(driver, login_btn).click();
+		Utility.waitForElement(driver, signUp_btn).click();
+		Sign_upPage signup=new Sign_upPage(driver);
+		return signup;
+	}
 
 }

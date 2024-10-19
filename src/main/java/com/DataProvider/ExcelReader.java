@@ -27,9 +27,9 @@ public class ExcelReader
 		int rowCount=enWorkBook.getSheet(SheetName).getPhysicalNumberOfRows();
 		int cellCount=enWorkBook.getSheet(SheetName).getRow(0).getPhysicalNumberOfCells();
 		
-		Object[][]arr=new Object[rowCount][cellCount];
+		Object[][]arr=new Object[rowCount-1][cellCount];
 		
-		for(int i=0;i<rowCount;i++)
+		for(int i=1;i<rowCount;i++)
 		{
 			for(int j=0;j<cellCount;j++)
 			{
@@ -54,7 +54,7 @@ public class ExcelReader
 				{
 					valueString="";
 				}
-				arr[i][j]=valueString;	}
+				arr[i-1][j]=valueString;	}
 		}
 		return arr;
 		}

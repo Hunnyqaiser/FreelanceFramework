@@ -17,18 +17,21 @@
       <![CDATA[Browser is up and running, running before class!!]]>
     </line>
     <line>
+      <![CDATA[size of list is 6]]>
+    </line>
+    <line>
       <![CDATA[Browser is about to teardown, running after class!!]]>
     </line>
     <line>
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-15T23:29:41 BST" name="Default suite" finished-at="2024-10-15T23:29:57 BST" duration-ms="15664">
+  <suite started-at="2024-10-19T17:11:38 BST" name="Default suite" finished-at="2024-10-19T17:11:53 BST" duration-ms="15410">
     <groups>
     </groups>
-    <test started-at="2024-10-15T23:29:41 BST" name="Default test" finished-at="2024-10-15T23:29:57 BST" duration-ms="15664">
-      <class name="test.Tests.LoginTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:29:41 BST" name="browserSetup" finished-at="2024-10-15T23:29:45 BST" duration-ms="4091" status="PASS">
+    <test started-at="2024-10-19T17:11:38 BST" name="Default test" finished-at="2024-10-19T17:11:53 BST" duration-ms="15410">
+      <class name="test.Tests.AddingNewCourse">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddingNewCourse@1f2586d6]" started-at="2024-10-19T17:11:38 BST" name="browserSetup" finished-at="2024-10-19T17:11:42 BST" duration-ms="4269" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -47,23 +50,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:29:46 BST" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-15T23:29:56 BST" duration-ms="10753" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@email.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="checkTheCoursedAlreadyAvailble()[pri:0, instance:test.Tests.AddingNewCourse@1f2586d6]" started-at="2024-10-19T17:11:42 BST" name="checkTheCoursedAlreadyAvailble" finished-at="2024-10-19T17:11:53 BST" duration-ms="10888" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[size of list is 6]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- validLoginToApp -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@7e6f74c]" started-at="2024-10-15T23:29:56 BST" name="teardownBrowser" finished-at="2024-10-15T23:29:57 BST" duration-ms="166" status="PASS">
+        </test-method> <!-- checkTheCoursedAlreadyAvailble -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddingNewCourse@1f2586d6]" started-at="2024-10-19T17:11:53 BST" name="teardownBrowser" finished-at="2024-10-19T17:11:53 BST" duration-ms="216" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -73,7 +67,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownBrowser -->
-      </class> <!-- test.Tests.LoginTest -->
+      </class> <!-- test.Tests.AddingNewCourse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
