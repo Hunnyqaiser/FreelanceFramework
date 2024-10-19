@@ -20,5 +20,16 @@ public class RegisterNewUserTest extends BaseClass
 		boolean status=signup.signUpMess();
 		Assert.assertTrue(status, "Registration failed");
 	}
+	
+	@Test()
+	public void registerUserWithFaker()
+	{
+		
+		LoginPage login=new LoginPage(driver);
+		login.clickOnSignUpButton();
+		Sign_upPage signup=new Sign_upPage(driver);
+		signup.registerUser(null, null, null, null, null, null, null);
+		
+	}
 
 }
