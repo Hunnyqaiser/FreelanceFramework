@@ -29,9 +29,10 @@ public class HomePage {
     
     
     
-    public void welcomeMsgShows()
+    public boolean welcomeMsgShows()
     {
-        Assert.assertTrue(Utility.waitForElement(driver, welcome_msg).isDisplayed());
+      boolean status = Utility.waitForElement(driver, welcome_msg).isDisplayed();
+        return status;
     }
 
     public void signOutOfApp()
