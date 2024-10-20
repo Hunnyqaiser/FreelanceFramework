@@ -22,14 +22,12 @@ public class Sign_upPage
 	protected By signup_btn = By.xpath("//button[normalize-space()='Sign up']");
 	protected By successful_msg = By.xpath("//div[contains(text(),'Signup successfully, Please login!')]");
 
-	
-	
 public void registerUser(String name, String state)
 {
 	Utility.waitForElement(driver, name_field).sendKeys(name);
-	String email = Utility.generateRandomEmail(10);
+	String email =Utility.generateRandomEmail(10);
 	Utility.waitForElement(driver, email_field).sendKeys(email);
-	String pass=	Utility.genrateRandomPassword(12);
+	String pass=Utility.genrateRandomPassword(12);
 	Utility.waitForElement(driver, password_field).sendKeys(pass);
 	String intrest = Utility.useRandomWord("Selenium", "Cypress", "RestAssured", "API Testing");
 	Utility.waitForElement(driver, By.xpath("//label[normalize-space()='"+intrest+"']")).click();

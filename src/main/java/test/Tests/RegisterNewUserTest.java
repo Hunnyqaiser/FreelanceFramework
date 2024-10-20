@@ -3,11 +3,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.DataProvider.DataProvidersClass;
 import com.base.BaseClass;
-import com.github.javafaker.Faker;
-import com.github.javafaker.service.FakeValuesService;
-
 import test.Pages.LoginPage;
 import test.Pages.Sign_upPage;
+
+
+
+
+
 
 public class RegisterNewUserTest extends BaseClass 
 {
