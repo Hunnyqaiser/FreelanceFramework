@@ -3,6 +3,8 @@ package com.Helper;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -89,6 +91,34 @@ public class Utility
 	    	Select select=new Select(Utility.waitForElement(driver, locator));
 	    	select.selectByVisibleText(visibleTextToSelect);
 	    }
+	    
+	    public static String generateRandomEmail(int lenght)
+	    {
+	    	String randomemail=RandomDataGenerator.generateRandomEmail(lenght);
+	    	
+	    	return randomemail;
+	    }
+	    
+	    public static String genrateRandomPassword(int lenght)
+	    {
+	    	String randomPass=RandomDataGenerator.generateRandomPassword(lenght);
+	    	
+	    	return randomPass;
+	    }
+	    
+	    public static String useRandomWord(String word, String word1)
+	    {
+	    	List<String> myWords = List.of(word, word1);
+	    	String randomWord = RandomDataGenerator.getRandomElementFromList(myWords);
+	    	return randomWord;
+	    }
+	    public static String useRandomWord(String word, String word1, String word2,String word3)
+	    {
+	    	List<String> myWords = List.of(word, word1,word2,word3);
+	    	String randomWord = RandomDataGenerator.getRandomElementFromList(myWords);
+	    	return randomWord;
+	    }
+	
 	
 
 }
