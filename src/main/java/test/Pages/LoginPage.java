@@ -36,6 +36,13 @@ public class LoginPage
 		return home;
 		}
 	
+	
+	public void urlValidation()
+	{
+		String url=	driver.getCurrentUrl();
+		url.contentEquals("login");
+	}
+	
 	public Sign_upPage clickOnSignUpButton()
 	{
 		Utility.waitForElement(driver, menu_btn).click();

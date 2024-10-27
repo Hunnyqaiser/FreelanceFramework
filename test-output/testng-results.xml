@@ -20,13 +20,13 @@
       <![CDATA[Learn Automation Courses]]>
     </line>
     <line>
-      <![CDATA[Number of Courses is 6]]>
-    </line>
-    <line>
       <![CDATA[Total Number of Social Media app icons are: 4]]>
     </line>
     <line>
       <![CDATA[number of social media apps is more than 0: number is:4]]>
+    </line>
+    <line>
+      <![CDATA[Number of Courses is 9]]>
     </line>
     <line>
       <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -35,12 +35,12 @@
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-20T19:35:52 BST" name="Default suite" finished-at="2024-10-20T19:36:14 BST" duration-ms="22563">
+  <suite started-at="2024-10-27T21:43:57 GMT" name="Suite" finished-at="2024-10-27T21:44:13 GMT" duration-ms="16309">
     <groups>
     </groups>
-    <test started-at="2024-10-20T19:35:52 BST" name="Default test" finished-at="2024-10-20T19:36:14 BST" duration-ms="22563">
+    <test started-at="2024-10-27T21:43:57 GMT" name="Test" finished-at="2024-10-27T21:44:13 GMT" duration-ms="16309">
       <class name="test.Tests.LoginTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@6a78afa0]" started-at="2024-10-20T19:35:52 BST" name="browserSetup" finished-at="2024-10-20T19:35:56 BST" duration-ms="4438" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:43:57 GMT" name="browserSetup" finished-at="2024-10-27T21:44:01 GMT" duration-ms="4201" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -59,17 +59,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="getNumbOfCoursesOnPage()[pri:1, instance:test.Tests.LoginTest@6a78afa0]" started-at="2024-10-20T19:35:56 BST" name="getNumbOfCoursesOnPage" finished-at="2024-10-20T19:36:01 BST" duration-ms="4228" status="PASS">
+        <test-method signature="getNumbOfCoursesOnPage()[pri:1, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:01 GMT" name="getNumbOfCoursesOnPage" finished-at="2024-10-27T21:44:06 GMT" duration-ms="4566" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Learn Automation Courses]]>
             </line>
             <line>
-              <![CDATA[Number of Courses is 6]]>
+              <![CDATA[Number of Courses is 9]]>
             </line>
           </reporter-output>
         </test-method> <!-- getNumbOfCoursesOnPage -->
-        <test-method signature="getNumberOfSocialMediaIcons()[pri:2, instance:test.Tests.LoginTest@6a78afa0]" started-at="2024-10-20T19:36:01 BST" name="getNumberOfSocialMediaIcons" finished-at="2024-10-20T19:36:04 BST" duration-ms="3021" status="PASS">
+        <test-method signature="getNumberOfSocialMediaIcons()[pri:2, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:01 GMT" name="getNumberOfSocialMediaIcons" finished-at="2024-10-27T21:44:04 GMT" duration-ms="3052" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Total Number of Social Media app icons are: 4]]>
@@ -79,7 +79,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- getNumberOfSocialMediaIcons -->
-        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:3, instance:test.Tests.LoginTest@6a78afa0]" started-at="2024-10-20T19:36:04 BST" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-20T19:36:14 BST" duration-ms="9970" status="PASS">
+        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:3, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:02 GMT" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-27T21:44:13 GMT" duration-ms="10598" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginToApp -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@6a78afa0]" started-at="2024-10-20T19:36:14 BST" name="teardownBrowser" finished-at="2024-10-20T19:36:14 BST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:13 GMT" name="teardownBrowser" finished-at="2024-10-27T21:44:13 GMT" duration-ms="231" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -106,6 +106,6 @@
           </reporter-output>
         </test-method> <!-- teardownBrowser -->
       </class> <!-- test.Tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
