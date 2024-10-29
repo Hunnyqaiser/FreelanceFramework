@@ -17,30 +17,18 @@
       <![CDATA[Browser is up and running, running before class!!]]>
     </line>
     <line>
-      <![CDATA[Learn Automation Courses]]>
-    </line>
-    <line>
-      <![CDATA[Total Number of Social Media app icons are: 4]]>
-    </line>
-    <line>
-      <![CDATA[number of social media apps is more than 0: number is:4]]>
-    </line>
-    <line>
-      <![CDATA[Number of Courses is 9]]>
-    </line>
-    <line>
       <![CDATA[Browser is about to teardown, running after class!!]]>
     </line>
     <line>
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-27T21:43:57 GMT" name="Suite" finished-at="2024-10-27T21:44:13 GMT" duration-ms="16309">
+  <suite started-at="2024-10-29T19:52:24 GMT" name="Default suite" finished-at="2024-10-29T19:52:43 GMT" duration-ms="18325">
     <groups>
     </groups>
-    <test started-at="2024-10-27T21:43:57 GMT" name="Test" finished-at="2024-10-27T21:44:13 GMT" duration-ms="16309">
-      <class name="test.Tests.LoginTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:43:57 GMT" name="browserSetup" finished-at="2024-10-27T21:44:01 GMT" duration-ms="4201" status="PASS">
+    <test started-at="2024-10-29T19:52:24 GMT" name="Default test" finished-at="2024-10-29T19:52:43 GMT" duration-ms="18325">
+      <class name="test.Tests.AddNewCatagoryTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@229f66ed]" started-at="2024-10-29T19:52:24 GMT" name="browserSetup" finished-at="2024-10-29T19:52:29 GMT" duration-ms="4211" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -59,27 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="getNumbOfCoursesOnPage()[pri:1, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:01 GMT" name="getNumbOfCoursesOnPage" finished-at="2024-10-27T21:44:06 GMT" duration-ms="4566" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Learn Automation Courses]]>
-            </line>
-            <line>
-              <![CDATA[Number of Courses is 9]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- getNumbOfCoursesOnPage -->
-        <test-method signature="getNumberOfSocialMediaIcons()[pri:2, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:01 GMT" name="getNumberOfSocialMediaIcons" finished-at="2024-10-27T21:44:04 GMT" duration-ms="3052" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Total Number of Social Media app icons are: 4]]>
-            </line>
-            <line>
-              <![CDATA[number of social media apps is more than 0: number is:4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- getNumberOfSocialMediaIcons -->
-        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:3, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:02 GMT" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-27T21:44:13 GMT" duration-ms="10598" status="PASS">
+        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@229f66ed]" started-at="2024-10-29T19:52:29 GMT" name="navigateToPage" data-provider="TestData" finished-at="2024-10-29T19:52:40 GMT" duration-ms="10638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,8 +62,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginToApp -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@1a5b6f42]" started-at="2024-10-27T21:44:13 GMT" name="teardownBrowser" finished-at="2024-10-27T21:44:13 GMT" duration-ms="231" status="PASS">
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="getCatagoriesDetails()[pri:2, instance:test.Tests.AddNewCatagoryTest@229f66ed]" started-at="2024-10-29T19:52:40 GMT" name="getCatagoriesDetails" finished-at="2024-10-29T19:52:40 GMT" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCatagoriesDetails -->
+        <test-method signature="addNewCatagory()[pri:3, instance:test.Tests.AddNewCatagoryTest@229f66ed]" started-at="2024-10-29T19:52:40 GMT" name="addNewCatagory" finished-at="2024-10-29T19:52:42 GMT" duration-ms="2465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCatagory -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@229f66ed]" started-at="2024-10-29T19:52:42 GMT" name="teardownBrowser" finished-at="2024-10-29T19:52:43 GMT" duration-ms="241" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -105,7 +81,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownBrowser -->
-      </class> <!-- test.Tests.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- test.Tests.AddNewCatagoryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
