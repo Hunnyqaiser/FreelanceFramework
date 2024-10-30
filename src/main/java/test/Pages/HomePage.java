@@ -2,7 +2,10 @@ package test.Pages;
 
 import com.Helper.Utility;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -60,5 +63,21 @@ public class HomePage {
     	ManageCourcesPage mcp=new ManageCourcesPage(driver);
     	return mcp;
     }
+    
+    public ManageCatagoriesPage travelToManageCatagoriesPage()
+    {
+    	Utility.waitForElement(driver, manage_btn).click();
+    	String parent_window=driver.getWindowHandle();
+    	Utility.waitForElement(driver, manage_catagories).click();
+    	Set<String> tabs=driver.getWindowHandles();
+    	
+    	List<String> listOfTabs=new ArrayList<String>(tabs);
+    	
+    		String newtab=listOfTabs.get(1);
+       	driver.switchTo().window(listOfTabs.get(1));
+    	ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
+    	return MCP;
+    }
+    
     
 }
