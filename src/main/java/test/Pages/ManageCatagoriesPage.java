@@ -42,10 +42,23 @@ public class ManageCatagoriesPage
 	{
 		Utility.waitForElement(driver, add_new_catagory_btn).click();
 		Alert alert=driver.switchTo().alert();
-		alert.dismiss();
-		Utility.waitForElement(driver, add_new_catagory_btn).click();
-		Alert alert1=driver.switchTo().alert();
-    	alert1.sendKeys(catagoryName);
-    	alert1.accept();
+    	alert.sendKeys(catagoryName);
+    	alert.accept();
+    	Utility.sleep(2);
 	}
+	
+	public String verifyCatagory()
+	{
+		String	catagoryText = null;
+		{
+			List<WebElement> listOfCatagories=driver.findElements(all_cat_names);
+			
+			for(WebElement ele:listOfCatagories)
+			{
+				catagoryText= ele.getText();
+				System.out.println(catagoryText);
+			}
+	}
+		return	catagoryText;
 }
+	}

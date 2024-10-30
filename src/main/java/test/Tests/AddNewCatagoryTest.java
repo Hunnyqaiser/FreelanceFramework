@@ -1,5 +1,6 @@
 package test.Tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.DataProvider.DataProvidersClass;
 import com.Helper.Utility;
@@ -37,5 +38,13 @@ public class AddNewCatagoryTest extends BaseClass
 		MCP.FindNameAndNumberOfCatagories();
 	}
 	
+	@Test(priority = 4)
+	public void verifyAddedCatagory()
+	{
+		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
+		boolean status=	MCP.verifyCatagory().equalsIgnoreCase("Automation Testing");
+		
+		Assert.assertTrue(status, "Catagory Created Successfully!! ");
+	}
 
 }
