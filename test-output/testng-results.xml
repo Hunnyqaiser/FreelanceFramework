@@ -23,12 +23,12 @@
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-30T19:10:10 GMT" name="Suite" finished-at="2024-10-30T19:10:29 GMT" duration-ms="19836">
+  <suite started-at="2024-11-03T14:42:44 GMT" name="Suite" finished-at="2024-11-03T14:43:04 GMT" duration-ms="20567">
     <groups>
     </groups>
-    <test started-at="2024-10-30T19:10:10 GMT" name="Test" finished-at="2024-10-30T19:10:29 GMT" duration-ms="19836">
+    <test started-at="2024-11-03T14:42:44 GMT" name="Test" finished-at="2024-11-03T14:43:04 GMT" duration-ms="20567">
       <class name="test.Tests.AddNewCatagoryTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@662ac478]" started-at="2024-10-30T19:10:10 GMT" name="browserSetup" finished-at="2024-10-30T19:10:14 GMT" duration-ms="4702" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-11-03T14:42:44 GMT" name="browserSetup" finished-at="2024-11-03T14:42:48 GMT" duration-ms="4258" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -47,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@662ac478]" started-at="2024-10-30T19:10:15 GMT" name="navigateToPage" data-provider="TestData" finished-at="2024-10-30T19:10:26 GMT" duration-ms="10579" status="PASS">
+        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-11-03T14:42:49 GMT" name="navigateToPage" data-provider="TestData" finished-at="2024-11-03T14:43:00 GMT" duration-ms="10634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,19 +63,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPage -->
-        <test-method signature="getCatagoriesDetails()[pri:2, instance:test.Tests.AddNewCatagoryTest@662ac478]" started-at="2024-10-30T19:10:26 GMT" name="getCatagoriesDetails" finished-at="2024-10-30T19:10:26 GMT" duration-ms="79" status="PASS">
+        <test-method signature="getCatagoriesDetails()[pri:2, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-11-03T14:43:00 GMT" name="getCatagoriesDetails" finished-at="2024-11-03T14:43:00 GMT" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCatagoriesDetails -->
-        <test-method signature="addNewCatagory()[pri:3, instance:test.Tests.AddNewCatagoryTest@662ac478]" started-at="2024-10-30T19:10:26 GMT" name="addNewCatagory" finished-at="2024-10-30T19:10:29 GMT" duration-ms="3233" status="PASS">
+        <test-method signature="addNewCatagory()[pri:3, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-11-03T14:43:00 GMT" name="addNewCatagory" finished-at="2024-11-03T14:43:03 GMT" duration-ms="3224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCatagory -->
-        <test-method signature="verifyAddedCatagory()[pri:4, instance:test.Tests.AddNewCatagoryTest@662ac478]" started-at="2024-10-30T19:10:29 GMT" name="verifyAddedCatagory" finished-at="2024-10-30T19:10:29 GMT" duration-ms="72" status="PASS">
+        <test-method signature="verifyAddedCatagory()[pri:4, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-11-03T14:43:04 GMT" name="verifyAddedCatagory" finished-at="2024-11-03T14:43:04 GMT" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedCatagory -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@662ac478]" started-at="2024-10-30T19:10:29 GMT" name="teardownBrowser" finished-at="2024-10-30T19:10:29 GMT" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-11-03T14:43:04 GMT" name="teardownBrowser" finished-at="2024-11-03T14:43:04 GMT" duration-ms="252" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>

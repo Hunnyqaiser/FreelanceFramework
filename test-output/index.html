@@ -180,6 +180,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Listeners.ExtentReportListner&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.Tests.AddNewCatagoryTest&quot;/&gt;
@@ -226,24 +229,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'navigateToPage')
 data.setCell(0, 2, 'test.Tests.AddNewCatagoryTest')
-data.setCell(0, 3, 10579);
+data.setCell(0, 3, 10634);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addNewCatagory')
 data.setCell(1, 2, 'test.Tests.AddNewCatagoryTest')
-data.setCell(1, 3, 3233);
+data.setCell(1, 3, 3224);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getCatagoriesDetails')
 data.setCell(2, 2, 'test.Tests.AddNewCatagoryTest')
-data.setCell(2, 3, 79);
+data.setCell(2, 3, 77);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyAddedCatagory')
 data.setCell(3, 2, 'test.Tests.AddNewCatagoryTest')
-data.setCell(3, 3, 72);
+data.setCell(3, 3, 75);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -276,23 +279,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">navigateToPage(admin@email.com, admin@123)</span>
-                <span class="method-start">5623 ms</span>
+                <span class="method-start">4989 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getCatagoriesDetails</span>
-                <span class="method-start">16208 ms</span>
+                <span class="method-start">15930 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addNewCatagory</span>
-                <span class="method-start">16289 ms</span>
+                <span class="method-start">16314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyAddedCatagory</span>
-                <span class="method-start">19523 ms</span>
+                <span class="method-start">19867 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardownBrowser</span>
-                <span class="method-start">19596 ms</span>
+                <span class="method-start">20297 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
