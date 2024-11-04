@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[seting up Browser, running before class!!]]>
@@ -23,12 +23,21 @@
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-10-19T10:44:09 BST" name="Default suite" finished-at="2024-10-19T10:44:22 BST" duration-ms="12982">
     <groups>
     </groups>
     <test started-at="2024-10-19T10:44:09 BST" name="Default test" finished-at="2024-10-19T10:44:22 BST" duration-ms="12982">
       <class name="test.Tests.LoginTest">
         <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@6b2ea799]" started-at="2024-10-19T10:44:09 BST" name="browserSetup" finished-at="2024-10-19T10:44:11 BST" duration-ms="2078" status="PASS">
+=======
+  <suite started-at="2024-10-30T11:05:37 GMT" name="Default suite" finished-at="2024-10-30T11:05:56 GMT" duration-ms="18785">
+    <groups>
+    </groups>
+    <test started-at="2024-10-30T11:05:37 GMT" name="Default test" finished-at="2024-10-30T11:05:56 GMT" duration-ms="18785">
+      <class name="test.Tests.AddNewCatagoryTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:37 GMT" name="browserSetup" finished-at="2024-10-30T11:05:41 GMT" duration-ms="3936" status="PASS">
+>>>>>>> dc882f7d5ef0cc025155bd956885c6c1011bb304
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -47,7 +56,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
+<<<<<<< HEAD
         <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:0, instance:test.Tests.LoginTest@6b2ea799]" started-at="2024-10-19T10:44:12 BST" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-19T10:44:22 BST" duration-ms="9788" status="PASS">
+=======
+        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:42 GMT" name="navigateToPage" data-provider="TestData" finished-at="2024-10-30T11:05:52 GMT" duration-ms="10542" status="PASS">
+>>>>>>> dc882f7d5ef0cc025155bd956885c6c1011bb304
           <params>
             <param index="0">
               <value>
@@ -62,8 +75,25 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- validLoginToApp -->
         <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@6b2ea799]" started-at="2024-10-19T10:44:22 BST" name="teardownBrowser" finished-at="2024-10-19T10:44:22 BST" duration-ms="214" status="PASS">
+=======
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="getCatagoriesDetails()[pri:2, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:52 GMT" name="getCatagoriesDetails" finished-at="2024-10-30T11:05:52 GMT" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCatagoriesDetails -->
+        <test-method signature="addNewCatagory()[pri:3, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:52 GMT" name="addNewCatagory" finished-at="2024-10-30T11:05:56 GMT" duration-ms="3204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCatagory -->
+        <test-method signature="verifyAddedCatagory()[pri:4, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:56 GMT" name="verifyAddedCatagory" finished-at="2024-10-30T11:05:56 GMT" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddedCatagory -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:56 GMT" name="teardownBrowser" finished-at="2024-10-30T11:05:56 GMT" duration-ms="241" status="PASS">
+>>>>>>> dc882f7d5ef0cc025155bd956885c6c1011bb304
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -73,7 +103,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownBrowser -->
-      </class> <!-- test.Tests.LoginTest -->
+      </class> <!-- test.Tests.AddNewCatagoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

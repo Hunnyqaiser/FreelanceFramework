@@ -6,17 +6,22 @@ import com.base.BaseClass;
 import test.Pages.LoginPage;
 import test.Pages.Sign_upPage;
 
+
+
+
+
+
 public class RegisterNewUserTest extends BaseClass 
 {
 	
 	
 	@Test(dataProvider="TestDataForAddingUser", dataProviderClass = DataProvidersClass.class)
-	public void registerNewUserWithDataProvider(String name, String email, String pass, String intrest, String gender, String state, String hobby)
+	public void registerNewUserWithDataProvider(String name,String state)
 	{
 		LoginPage login=new LoginPage(driver);
 		login.clickOnSignUpButton();
 		Sign_upPage signup=new Sign_upPage(driver);
-		signup.registerUser(name, email, pass, intrest, gender, state, hobby);
+		signup.registerUser(name, state);
 		boolean status=signup.signUpMess();
 		Assert.assertTrue(status, "Registration failed");
 	}
