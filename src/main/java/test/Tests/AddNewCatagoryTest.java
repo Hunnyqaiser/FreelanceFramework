@@ -43,8 +43,8 @@ public class AddNewCatagoryTest extends BaseClass
 	{
 		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
 		boolean status=	MCP.verifyCatagory().equalsIgnoreCase("Automation Testing");
-		
-		Assert.assertTrue(status, "Catagory Created Successfully!! ");
+		Assert.assertFalse(status, "Category with same name already exists");
+		Assert.assertTrue(status, "Catagory Created Successfully!!");
 	}
 
 }
