@@ -5,7 +5,7 @@
     <classes>
       <class name="test.Tests.AddNewCatagoryTest">
         <methods>
-          <include name="navigateToPage" invocation-numbers="0"/>
+          <include name="verifyAddedCatagory"/>
           <include name="teardownBrowser"/>
           <include name="browserSetup"/>
         </methods>
