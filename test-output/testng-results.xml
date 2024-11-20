@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[seting up Browser, running before class!!]]>
@@ -23,15 +23,12 @@
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-
-  <suite started-at="2024-10-30T11:05:37 GMT" name="Default suite" finished-at="2024-10-30T11:05:56 GMT" duration-ms="18785">
+  <suite started-at="2024-11-20T13:04:29 GMT" name="Default suite" finished-at="2024-11-20T13:04:50 GMT" duration-ms="20931">
     <groups>
     </groups>
-    <test started-at="2024-11-04T16:53:44 GMT" name="Default test" finished-at="2024-11-04T16:54:04 GMT" duration-ms="20384">
-      <class name="test.Tests.AddNewCatagoryTest">
-
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:37 GMT" name="browserSetup" finished-at="2024-10-30T11:05:41 GMT" duration-ms="3936" status="PASS">
-dc882f7d5ef0cc025155bd956885c6c1011bb304
+    <test started-at="2024-11-20T13:04:29 GMT" name="Default test" finished-at="2024-11-20T13:04:50 GMT" duration-ms="20931">
+      <class name="test.Tests.RegisterNewUserTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.RegisterNewUserTest@217ed35e]" started-at="2024-11-20T13:04:29 GMT" name="browserSetup" finished-at="2024-11-20T13:04:32 GMT" duration-ms="3102" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -50,27 +47,23 @@ dc882f7d5ef0cc025155bd956885c6c1011bb304
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-
-
-        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:0, instance:test.Tests.LoginTest@6b2ea799]" started-at="2024-10-19T10:44:12 BST" name="validLoginToApp" data-provider="TestData" finished-at="2024-10-19T10:44:22 BST" duration-ms="9788" status="PASS">
-        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:42 GMT" name="navigateToPage" data-provider="TestData" finished-at="2024-10-30T11:05:52 GMT" duration-ms="10542" status="PASS">
- dc882f7d5ef0cc025155bd956885c6c1011bb304
+        <test-method signature="registerNewUserWithDataProvider(java.lang.String,java.lang.String)[pri:0, instance:test.Tests.RegisterNewUserTest@217ed35e]" started-at="2024-11-20T13:04:33 GMT" name="registerNewUserWithDataProvider" data-provider="TestDataForAddingUser" finished-at="2024-11-20T13:04:50 GMT" duration-ms="16660" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin@email.com]]>
+                <![CDATA[Darryal]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin@123]]>
+                <![CDATA[Goa]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-<test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@31190526]" started-at="2024-10-30T11:05:56 GMT" name="teardownBrowser" finished-at="2024-10-30T11:05:56 GMT" duration-ms="241" status="PASS">
-dc882f7d5ef0cc025155bd956885c6c1011bb304
+        </test-method> <!-- registerNewUserWithDataProvider -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.RegisterNewUserTest@217ed35e]" started-at="2024-11-20T13:04:50 GMT" name="teardownBrowser" finished-at="2024-11-20T13:04:50 GMT" duration-ms="198" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -80,7 +73,7 @@ dc882f7d5ef0cc025155bd956885c6c1011bb304
             </line>
           </reporter-output>
         </test-method> <!-- teardownBrowser -->
-      </class> <!-- test.Tests.AddNewCatagoryTest -->
+      </class> <!-- test.Tests.RegisterNewUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
