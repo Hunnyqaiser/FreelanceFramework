@@ -61,5 +61,7 @@ public class LoginTest extends BaseClass
 			Reporter.log("Test failed number of social media apps is 0");
 		}
 	}
+	
+	
 
 }

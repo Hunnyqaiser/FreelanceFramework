@@ -33,7 +33,7 @@ public class AddNewCatagoryTest extends BaseClass
 	public void addNewCatagory()
 	{
 		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
-		MCP.addNewCatagory("Automation Testing");
+		MCP.addNewCatagory("Automation Testing2");
 		System.out.println("Names and number of Catagories after adding my own!!!");
 		MCP.FindNameAndNumberOfCatagories();
 	}
