@@ -9,50 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">57,338</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,305</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.Tests.LoginTest</td><td><a href="#m0">verifyTheTextInEmailFild</a></td><td rowspan="1">1735521423479</td><td rowspan="1">30012</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">test.Tests.LoginTest</td><td><a href="#m1">getNumbOfCoursesOnPage</a></td><td rowspan="1">1735521402062</td><td rowspan="1">4299</td></tr><tr class="passedeven"><td><a href="#m2">getNumberOfSocialMediaIcons</a></td><td rowspan="1">1735521406366</td><td rowspan="1">3036</td></tr><tr class="passedeven"><td><a href="#m3">validLoginToApp</a></td><td rowspan="1">1735521410252</td><td rowspan="1">13225</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">test.Tests.LoginTest</td><td><a href="#m0">getNumbOfCoursesOnPage</a></td><td rowspan="1">1735561790252</td><td rowspan="1">4313</td></tr><tr class="passedeven"><td><a href="#m1">getNumberOfSocialMediaIcons</a></td><td rowspan="1">1735561794569</td><td rowspan="1">3018</td></tr><tr class="passedeven"><td><a href="#m2">validLoginToApp</a></td><td rowspan="1">1735561798024</td><td rowspan="1">9678</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">test.Tests.LoginTest#verifyTheTextInEmailFild</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: email1 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/qs/9w9mv_0x5tj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49465}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49465/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c31c971b22565e951662089a74282d0b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.Helper.Utility.waitForElement(Utility.java:51)
-	at test.Pages.LoginPage.verifyEmailFiledText(LoginPage.java:39)
-	at test.Tests.LoginTest.verifyTheTextInEmailFild(LoginTest.java:69)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.Tests.LoginTest#getNumbOfCoursesOnPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Learn Automation Courses<br/>Number of Courses is 14</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.Tests.LoginTest#getNumberOfSocialMediaIcons</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Total Number of Social Media app icons are: 9<br/>number of social media apps is more than 0: number is:9</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.Tests.LoginTest#validLoginToApp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin@email.com</td><td>admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">test.Tests.LoginTest#getNumbOfCoursesOnPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Learn Automation Courses<br/>Number of Courses is 17</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.Tests.LoginTest#getNumberOfSocialMediaIcons</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Total Number of Social Media app icons are: 4<br/>number of social media apps is more than 0: number is:4</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.Tests.LoginTest#validLoginToApp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin@email.com</td><td>admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

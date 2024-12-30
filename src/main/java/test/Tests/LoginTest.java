@@ -17,6 +17,7 @@ public class LoginTest extends BaseClass
 	{
 		LoginPage login=new LoginPage(driver);
 		HomePage home=new HomePage(driver);
+		//System.out.println(login.verifyEmailFiledText());
 		login.loginToApp(email, pass);
 		boolean	loginstatus = home.welcomeMsgShows();
 		Assert.assertTrue(loginstatus);
@@ -42,7 +43,7 @@ public class LoginTest extends BaseClass
 		}
 		
 	}
-	@Test(priority =2 )
+	@Test(priority =2)
 	public void getNumberOfSocialMediaIcons()
 	{
 		LoginPage login=new LoginPage(driver);
@@ -62,12 +63,5 @@ public class LoginTest extends BaseClass
 		}
 	}
 	
-	@Test(priority = 3)
-	public void verifyTheTextInEmailFild()
-	{
-		LoginPage login=new LoginPage(driver);
-		System.out.println(login.verifyEmailFiledText());
-		
-		
-	}
+	
 }
