@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[seting up Browser, running before class!!]]>
@@ -20,13 +20,13 @@
       <![CDATA[Learn Automation Courses]]>
     </line>
     <line>
-      <![CDATA[Number of Courses is 15]]>
+      <![CDATA[Number of Courses is 14]]>
     </line>
     <line>
-      <![CDATA[Total Number of Social Media app icons are: 4]]>
+      <![CDATA[Total Number of Social Media app icons are: 9]]>
     </line>
     <line>
-      <![CDATA[number of social media apps is more than 0: number is:4]]>
+      <![CDATA[number of social media apps is more than 0: number is:9]]>
     </line>
     <line>
       <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -35,12 +35,12 @@
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-12-17T00:12:06 GMT" name="Default suite" finished-at="2024-12-17T00:12:27 GMT" duration-ms="21074">
+  <suite started-at="2024-12-30T01:16:36 GMT" name="Default suite" finished-at="2024-12-30T01:17:33 GMT" duration-ms="57338">
     <groups>
     </groups>
-    <test started-at="2024-12-17T00:12:06 GMT" name="Default test" finished-at="2024-12-17T00:12:27 GMT" duration-ms="21074">
+    <test started-at="2024-12-30T01:16:36 GMT" name="Default test" finished-at="2024-12-30T01:17:33 GMT" duration-ms="57338">
       <class name="test.Tests.LoginTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-17T00:12:06 GMT" name="browserSetup" finished-at="2024-12-17T00:12:10 GMT" duration-ms="3462" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@31190526]" started-at="2024-12-30T01:16:36 GMT" name="browserSetup" finished-at="2024-12-30T01:16:42 GMT" duration-ms="5686" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -59,27 +59,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="getNumbOfCoursesOnPage()[pri:1, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-17T00:12:10 GMT" name="getNumbOfCoursesOnPage" finished-at="2024-12-17T00:12:14 GMT" duration-ms="4315" status="PASS">
+        <test-method signature="getNumbOfCoursesOnPage()[pri:1, instance:test.Tests.LoginTest@31190526]" started-at="2024-12-30T01:16:42 GMT" name="getNumbOfCoursesOnPage" finished-at="2024-12-30T01:16:46 GMT" duration-ms="4299" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Learn Automation Courses]]>
             </line>
             <line>
-              <![CDATA[Number of Courses is 15]]>
+              <![CDATA[Number of Courses is 14]]>
             </line>
           </reporter-output>
         </test-method> <!-- getNumbOfCoursesOnPage -->
-        <test-method signature="getNumberOfSocialMediaIcons()[pri:2, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-17T00:12:14 GMT" name="getNumberOfSocialMediaIcons" finished-at="2024-12-17T00:12:17 GMT" duration-ms="3021" status="PASS">
+        <test-method signature="getNumberOfSocialMediaIcons()[pri:2, instance:test.Tests.LoginTest@31190526]" started-at="2024-12-30T01:16:46 GMT" name="getNumberOfSocialMediaIcons" finished-at="2024-12-30T01:16:49 GMT" duration-ms="3036" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Total Number of Social Media app icons are: 4]]>
+              <![CDATA[Total Number of Social Media app icons are: 9]]>
             </line>
             <line>
-              <![CDATA[number of social media apps is more than 0: number is:4]]>
+              <![CDATA[number of social media apps is more than 0: number is:9]]>
             </line>
           </reporter-output>
         </test-method> <!-- getNumberOfSocialMediaIcons -->
-        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:3, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-17T00:12:18 GMT" name="validLoginToApp" data-provider="TestData" finished-at="2024-12-17T00:12:27 GMT" duration-ms="9230" status="PASS">
+        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:3, instance:test.Tests.LoginTest@31190526]" started-at="2024-12-30T01:16:50 GMT" name="validLoginToApp" data-provider="TestData" finished-at="2024-12-30T01:17:03 GMT" duration-ms="13225" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginToApp -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-17T00:12:27 GMT" name="teardownBrowser" finished-at="2024-12-17T00:12:27 GMT" duration-ms="240" status="PASS">
+        <test-method signature="verifyTheTextInEmailFild()[pri:3, instance:test.Tests.LoginTest@31190526]" started-at="2024-12-30T01:17:03 GMT" name="verifyTheTextInEmailFild" finished-at="2024-12-30T01:17:33 GMT" duration-ms="30012" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.name: email1 (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.7', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/qs/9w9mv_0x5tj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49465}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49465/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c31c971b22565e951662089a74282d0b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: email1 (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.7', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/qs/9w9mv_0x5tj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49465}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49465/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c31c971b22565e951662089a74282d0b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.Helper.Utility.waitForElement(Utility.java:51)
+at test.Pages.LoginPage.verifyEmailFiledText(LoginPage.java:39)
+at test.Tests.LoginTest.verifyTheTextInEmailFild(LoginTest.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheTextInEmailFild -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@31190526]" started-at="2024-12-30T01:17:33 GMT" name="teardownBrowser" finished-at="2024-12-30T01:17:33 GMT" duration-ms="176" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>

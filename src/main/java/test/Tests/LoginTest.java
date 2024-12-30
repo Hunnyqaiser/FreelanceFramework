@@ -62,6 +62,12 @@ public class LoginTest extends BaseClass
 		}
 	}
 	
-	
-
+	@Test(priority = 3)
+	public void verifyTheTextInEmailFild()
+	{
+		LoginPage login=new LoginPage(driver);
+		System.out.println(login.verifyEmailFiledText());
+		
+		
+	}
 }
