@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[seting up Browser, running before class!!]]>
@@ -17,18 +17,30 @@
       <![CDATA[Browser is up and running, running before class!!]]>
     </line>
     <line>
+      <![CDATA[Learn Automation Courses]]>
+    </line>
+    <line>
+      <![CDATA[Number of Courses is 17]]>
+    </line>
+    <line>
+      <![CDATA[Total Number of Social Media app icons are: 4]]>
+    </line>
+    <line>
+      <![CDATA[number of social media apps is more than 0: number is:4]]>
+    </line>
+    <line>
       <![CDATA[Browser is about to teardown, running after class!!]]>
     </line>
     <line>
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-12-09T23:49:13 GMT" name="Suite" finished-at="2024-12-09T23:49:33 GMT" duration-ms="19821">
+  <suite started-at="2024-12-30T12:29:45 GMT" name="Default suite" finished-at="2024-12-30T12:30:07 GMT" duration-ms="22305">
     <groups>
     </groups>
-    <test started-at="2024-12-09T23:49:13 GMT" name="Test" finished-at="2024-12-09T23:49:33 GMT" duration-ms="19821">
-      <class name="test.Tests.AddNewCatagoryTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-12-09T23:49:13 GMT" name="browserSetup" finished-at="2024-12-09T23:49:16 GMT" duration-ms="3149" status="PASS">
+    <test started-at="2024-12-30T12:29:45 GMT" name="Default test" finished-at="2024-12-30T12:30:07 GMT" duration-ms="22305">
+      <class name="test.Tests.LoginTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-30T12:29:45 GMT" name="browserSetup" finished-at="2024-12-30T12:29:50 GMT" duration-ms="4631" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -47,7 +59,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-12-09T23:49:17 GMT" name="navigateToPage" data-provider="TestData" finished-at="2024-12-09T23:49:28 GMT" duration-ms="10719" status="PASS">
+        <test-method signature="getNumbOfCoursesOnPage()[pri:1, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-30T12:29:50 GMT" name="getNumbOfCoursesOnPage" finished-at="2024-12-30T12:29:54 GMT" duration-ms="4313" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Learn Automation Courses]]>
+            </line>
+            <line>
+              <![CDATA[Number of Courses is 17]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getNumbOfCoursesOnPage -->
+        <test-method signature="getNumberOfSocialMediaIcons()[pri:2, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-30T12:29:54 GMT" name="getNumberOfSocialMediaIcons" finished-at="2024-12-30T12:29:57 GMT" duration-ms="3018" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Total Number of Social Media app icons are: 4]]>
+            </line>
+            <line>
+              <![CDATA[number of social media apps is more than 0: number is:4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getNumberOfSocialMediaIcons -->
+        <test-method signature="validLoginToApp(java.lang.String,java.lang.String)[pri:3, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-30T12:29:58 GMT" name="validLoginToApp" data-provider="TestData" finished-at="2024-12-30T12:30:07 GMT" duration-ms="9678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,53 +94,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToPage -->
-        <test-method signature="getCatagoriesDetails()[pri:2, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-12-09T23:49:28 GMT" name="getCatagoriesDetails" finished-at="2024-12-09T23:49:28 GMT" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCatagoriesDetails -->
-        <test-method signature="addNewCatagory()[pri:3, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-12-09T23:49:29 GMT" name="addNewCatagory" finished-at="2024-12-09T23:49:32 GMT" duration-ms="3260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewCatagory -->
-        <test-method signature="verifyAddedCatagory()[pri:4, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-12-09T23:49:32 GMT" name="verifyAddedCatagory" finished-at="2024-12-09T23:49:32 GMT" duration-ms="108" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Category with same name already exists expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Category with same name already exists expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at test.Tests.AddNewCatagoryTest.verifyAddedCatagory(AddNewCatagoryTest.java:46)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddedCatagory -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@5038d0b5]" started-at="2024-12-09T23:49:33 GMT" name="teardownBrowser" finished-at="2024-12-09T23:49:33 GMT" duration-ms="262" status="PASS">
+        </test-method> <!-- validLoginToApp -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.LoginTest@229f66ed]" started-at="2024-12-30T12:30:07 GMT" name="teardownBrowser" finished-at="2024-12-30T12:30:07 GMT" duration-ms="191" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>
@@ -118,7 +105,7 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
             </line>
           </reporter-output>
         </test-method> <!-- teardownBrowser -->
-      </class> <!-- test.Tests.AddNewCatagoryTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- test.Tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

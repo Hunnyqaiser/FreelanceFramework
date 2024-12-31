@@ -14,6 +14,12 @@ import test.Pages.Sign_upPage;
 public class RegisterNewUserTest extends BaseClass 
 {
 	
+	@Test
+	public void verifyAllFieldErrors()
+	{
+		
+		
+	}
 	
 	@Test(dataProvider="TestDataForAddingUser", dataProviderClass = DataProvidersClass.class)
 	public void registerNewUserWithDataProvider(String name,String state)
@@ -25,5 +31,7 @@ public class RegisterNewUserTest extends BaseClass
 		boolean status=signup.signUpMess();
 		Assert.assertTrue(status, "Registration failed");
 	}
+	
+	
 
 }
