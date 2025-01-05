@@ -6,20 +6,8 @@ import com.base.BaseClass;
 import test.Pages.LoginPage;
 import test.Pages.Sign_upPage;
 
-
-
-
-
-
 public class RegisterNewUserTest extends BaseClass 
 {
-	
-	@Test
-	public void verifyAllFieldErrors()
-	{
-		
-		
-	}
 	
 	@Test(dataProvider="TestDataForAddingUser", dataProviderClass = DataProvidersClass.class)
 	public void registerNewUserWithDataProvider(String name,String state)

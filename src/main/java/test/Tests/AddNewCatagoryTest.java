@@ -29,7 +29,8 @@ public class AddNewCatagoryTest extends BaseClass
 		MCP.FindNameAndNumberOfCatagories();
 	}
 	
-	@Test(priority = 3)
+
+	@Test(priority = 4)
 	public void addNewCatagory()
 	{
 		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
@@ -38,7 +39,15 @@ public class AddNewCatagoryTest extends BaseClass
 		MCP.FindNameAndNumberOfCatagories();
 	}
 	
-	@Test(priority = 4)
+	//@Test(priority = 3)
+	public void deleteIfAutomation2Availale()
+	{
+		
+		
+		
+	}
+	
+	@Test(priority = 5)
 	public void verifyAddedCatagory()
 	{
 		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
