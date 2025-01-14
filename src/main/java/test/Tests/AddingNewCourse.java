@@ -15,6 +15,7 @@ public class AddingNewCourse extends BaseClass
 	@Test
 	public void checkTheCoursedAlreadyAvailble()
 	{
+		System.out.println("Thread Name is: "+Thread.currentThread().getName());
 		LoginPage login=new LoginPage(driver);
 		HomePage home=new HomePage(driver);
 		ManageCourcesPage Mcp=new ManageCourcesPage(driver);
