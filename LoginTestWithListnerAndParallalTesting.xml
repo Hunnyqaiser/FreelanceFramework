@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="methods" name="Suite">
+<suite name="Suite">
  <listeners>
         <listener class-name = "Listeners.ExtentReportListner"></listener>
     </listeners>
     
-  <test thread-count="4" parallel="methods" name="Test">
+  <test thread-count="4" parallel="classes" name="Test">
     <classes>
       <class name="test.Tests.LoginTest"/>
+      <class name="test.Tests.AddingNewCourse"/>
+      <class name="test.Tests.AddNewCatagoryTest"/>
+      <class name="test.Tests.RegisterNewUserTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

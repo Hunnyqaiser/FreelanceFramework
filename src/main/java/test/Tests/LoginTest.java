@@ -15,6 +15,7 @@ public class LoginTest extends BaseClass
 	@Test(dataProvider = "TestData", dataProviderClass = DataProvidersClass.class, priority = 1)
 	public void validLoginToApp(String email, String pass)
 	{
+		Reporter.log(Thread.currentThread().getName(),true);
 		LoginPage login=new LoginPage(driver);
 		HomePage home=new HomePage(driver);
 		login.loginToApp(email, pass);
@@ -26,6 +27,7 @@ public class LoginTest extends BaseClass
 	@Test(priority = 2)
 	public void getNumbOfCoursesOnPage()
 	{
+		Reporter.log(Thread.currentThread().getName(),true);
 		LoginPage login=new LoginPage(driver);
 		Utility.sleep(3);
 		System.out.println(login.verifyEmailFiledText());
@@ -46,6 +48,7 @@ public class LoginTest extends BaseClass
 	@Test (priority =3)
 	public void getNumberOfSocialMediaIcons()
 	{
+		Reporter.log(Thread.currentThread().getName(),true);
 		LoginPage login=new LoginPage(driver);
 		Utility.sleep(3);
 		int num=	login.checkNumOfSocialMedia();
