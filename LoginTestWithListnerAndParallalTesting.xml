@@ -5,7 +5,7 @@
         <listener class-name = "Listeners.ExtentReportListner"></listener>
     </listeners>
     
-  <test thread-count="4" parallel="classes" name="Test">
+  <test thread-count="2" parallel="classes" name="Test">
     <classes>
       <class name="test.Tests.LoginTest"/>
       <class name="test.Tests.AddingNewCourse"/>

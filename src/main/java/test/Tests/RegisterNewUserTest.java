@@ -12,6 +12,7 @@ public class RegisterNewUserTest extends BaseClass
 	@Test(dataProvider="TestDataForAddingUser", dataProviderClass = DataProvidersClass.class)
 	public void registerNewUserWithDataProvider(String name,String state)
 	{
+		System.out.println("Thread Name is: "+Thread.currentThread().getName());
 		LoginPage login=new LoginPage(driver);
 		login.clickOnSignUpButton();
 		Sign_upPage signup=new Sign_upPage(driver);
