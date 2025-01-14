@@ -5,9 +5,9 @@
     <classes>
       <class name="test.Tests.LoginTest">
         <methods>
-          <include name="validLoginToApp" invocation-numbers="0"/>
           <include name="teardownBrowser"/>
           <include name="browserSetup"/>
+          <include name="getNumbOfCoursesOnPage"/>
         </methods>
       </class> <!-- test.Tests.LoginTest -->
     </classes>

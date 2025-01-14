@@ -12,23 +12,23 @@ import test.Pages.LoginPage;
 
 public class LoginTest extends BaseClass 
 {
-	@Test(dataProvider = "TestData", dataProviderClass = DataProvidersClass.class, priority = 3)
+	@Test(dataProvider = "TestData", dataProviderClass = DataProvidersClass.class, priority = 1)
 	public void validLoginToApp(String email, String pass)
 	{
 		LoginPage login=new LoginPage(driver);
 		HomePage home=new HomePage(driver);
-		//System.out.println(login.verifyEmailFiledText());
 		login.loginToApp(email, pass);
 		boolean	loginstatus = home.welcomeMsgShows();
 		Assert.assertTrue(loginstatus);
 	}
 	
 	
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void getNumbOfCoursesOnPage()
 	{
 		LoginPage login=new LoginPage(driver);
 		Utility.sleep(3);
+		System.out.println(login.verifyEmailFiledText());
 		int number = login.checkNumOfCourses();
 		
 		if (number>0)
@@ -43,7 +43,7 @@ public class LoginTest extends BaseClass
 		}
 		
 	}
-	@Test(priority =2)
+	@Test (priority =3)
 	public void getNumberOfSocialMediaIcons()
 	{
 		LoginPage login=new LoginPage(driver);
