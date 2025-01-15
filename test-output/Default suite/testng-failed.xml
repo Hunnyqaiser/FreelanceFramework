@@ -5,9 +5,9 @@
     <classes>
       <class name="test.Tests.AddNewCatagoryTest">
         <methods>
-          <include name="verifyAddedCatagory"/>
           <include name="teardownBrowser"/>
           <include name="browserSetup"/>
+          <include name="addNewCatagory"/>
         </methods>
       </class> <!-- test.Tests.AddNewCatagoryTest -->
     </classes>

@@ -23,12 +23,12 @@
       <![CDATA[Browser closed and quit!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-15T18:52:58 GMT" name="Default suite" finished-at="2025-01-15T18:53:16 GMT" duration-ms="17833">
+  <suite started-at="2025-01-15T19:41:35 GMT" name="Default suite" finished-at="2025-01-15T19:41:57 GMT" duration-ms="21842">
     <groups>
     </groups>
-    <test started-at="2025-01-15T18:52:58 GMT" name="Default test" finished-at="2025-01-15T18:53:16 GMT" duration-ms="17833">
+    <test started-at="2025-01-15T19:41:35 GMT" name="Default test" finished-at="2025-01-15T19:41:57 GMT" duration-ms="21842">
       <class name="test.Tests.AddNewCatagoryTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T18:52:58 GMT" name="browserSetup" finished-at="2025-01-15T18:52:59 GMT" duration-ms="1626" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T19:41:35 GMT" name="browserSetup" finished-at="2025-01-15T19:41:37 GMT" duration-ms="1655" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[seting up Browser, running before class!!]]>
@@ -47,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T18:53:00 GMT" name="navigateToPage" data-provider="TestData" finished-at="2025-01-15T18:53:10 GMT" duration-ms="10032" status="PASS">
+        <test-method signature="navigateToPage(java.lang.String,java.lang.String)[pri:1, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T19:41:37 GMT" name="navigateToPage" data-provider="TestData" finished-at="2025-01-15T19:41:48 GMT" duration-ms="10604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,23 +63,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPage -->
-        <test-method signature="getCatagoriesDetails()[pri:2, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T18:53:10 GMT" name="getCatagoriesDetails" finished-at="2025-01-15T18:53:10 GMT" duration-ms="76" status="PASS">
+        <test-method signature="getCatagoriesDetails()[pri:2, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T19:41:48 GMT" name="getCatagoriesDetails" finished-at="2025-01-15T19:41:48 GMT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCatagoriesDetails -->
-        <test-method signature="deleteIfAutomation2Availale()[pri:3, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T18:53:10 GMT" name="deleteIfAutomation2Availale" finished-at="2025-01-15T18:53:10 GMT" duration-ms="116" status="PASS">
+        <test-method signature="deleteIfAutomation2Availale()[pri:3, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T19:41:48 GMT" name="deleteIfAutomation2Availale" finished-at="2025-01-15T19:41:52 GMT" duration-ms="3453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteIfAutomation2Availale -->
-        <test-method signature="addNewCatagory()[pri:4, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T18:53:10 GMT" name="addNewCatagory" finished-at="2025-01-15T18:53:15 GMT" duration-ms="5217" status="PASS">
+        <test-method signature="addNewCatagory()[pri:4, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T19:41:52 GMT" name="addNewCatagory" finished-at="2025-01-15T19:41:57 GMT" duration-ms="5264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCatagory -->
-        <test-method signature="verifyAddedCatagory()[pri:5, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T18:53:15 GMT" name="verifyAddedCatagory" finished-at="2025-01-15T18:53:15 GMT" duration-ms="77" status="PASS">
+        <test-method signature="verifyAddedCatagory()[pri:5, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T19:41:57 GMT" name="verifyAddedCatagory" finished-at="2025-01-15T19:41:57 GMT" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedCatagory -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T18:53:15 GMT" name="teardownBrowser" finished-at="2025-01-15T18:53:16 GMT" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:test.Tests.AddNewCatagoryTest@557caf28]" started-at="2025-01-15T19:41:57 GMT" name="teardownBrowser" finished-at="2025-01-15T19:41:57 GMT" duration-ms="182" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is about to teardown, running after class!!]]>

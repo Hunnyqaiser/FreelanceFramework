@@ -31,6 +31,14 @@ public class AddNewCatagoryTest extends BaseClass
 		MCP.FindNameAndNumberOfCatagories();
 	}
 	
+	@Test(priority = 3)
+	public void deleteIfAutomation2Availale()
+	{
+		System.out.println("Thread Name is: "+Thread.currentThread().getName());
+		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
+		MCP.deleteIfCatagoryAlreadyAvailable();
+	}
+	
 
 	@Test(priority = 4)
 	public void addNewCatagory()
@@ -41,14 +49,7 @@ public class AddNewCatagoryTest extends BaseClass
 		System.out.println("Names and number of Catagories after adding my own!!!");
 		MCP.FindNameAndNumberOfCatagories();
 	}
-	
-	@Test(priority = 3)
-	public void deleteIfAutomation2Availale()
-	{
-		System.out.println("Thread Name is: "+Thread.currentThread().getName());
-		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
-		MCP.deleteIfCatagoryAlreadyAvailable();
-	}
+
 	
 	@Test(priority = 5)
 	public void verifyAddedCatagory()
