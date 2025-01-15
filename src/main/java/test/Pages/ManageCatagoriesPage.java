@@ -19,7 +19,7 @@ public class ManageCatagoriesPage
 	protected By manage_catagoris_text = By.xpath("//h1[normalize-space()='Manage Categories']");
 	protected By add_new_catagory_btn = By.xpath("//button[normalize-space()='Add New Category']");
 	protected By all_cat_names = By.xpath("//th[normalize-space()='Cateogry Name']/following::tr//td[1]");
-	
+	protected By delete_cat_if_avail = By.xpath("//th[normalize-space()='Cateogry Name']/following::tr//td[2]");
 	
 	public void verifyManageCatagoriesIsDisplayed()
 	{
@@ -43,8 +43,25 @@ public class ManageCatagoriesPage
 		Utility.waitForElement(driver, add_new_catagory_btn).click();
 		Alert alert=driver.switchTo().alert();
     	alert.sendKeys(catagoryName);
+    	Utility.sleep(2);
     	alert.accept();
     	Utility.sleep(2);
+	}
+	
+	public void deleteIfCatagoryAlreadyAvailable()
+	{
+		List<WebElement> listOfCatagories=driver.findElements(all_cat_names);
+		
+		for(WebElement ele:listOfCatagories)
+		{
+			System.out.println(ele.getText());
+			if(ele.getText().equalsIgnoreCase("Automation Testing2"))
+			{
+				Utility.waitForElement(driver, delete_cat_if_avail).click();
+			}
+		}
+	
+		System.out.println("Number of Catagories is: "+listOfCatagories.size());
 	}
 	
 	public String verifyCatagory()

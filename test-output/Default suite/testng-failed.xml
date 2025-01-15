@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Tests.LoginTest">
+      <class name="test.Tests.AddNewCatagoryTest">
         <methods>
+          <include name="verifyAddedCatagory"/>
           <include name="teardownBrowser"/>
           <include name="browserSetup"/>
-          <include name="getNumbOfCoursesOnPage"/>
         </methods>
-      </class> <!-- test.Tests.LoginTest -->
+      </class> <!-- test.Tests.AddNewCatagoryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

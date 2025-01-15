@@ -42,12 +42,12 @@ public class AddNewCatagoryTest extends BaseClass
 		MCP.FindNameAndNumberOfCatagories();
 	}
 	
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	public void deleteIfAutomation2Availale()
 	{
 		System.out.println("Thread Name is: "+Thread.currentThread().getName());
-		
-		
+		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
+		MCP.deleteIfCatagoryAlreadyAvailable();
 	}
 	
 	@Test(priority = 5)
@@ -57,7 +57,7 @@ public class AddNewCatagoryTest extends BaseClass
 		ManageCatagoriesPage MCP=new ManageCatagoriesPage(driver);
 		boolean status=	MCP.verifyCatagory().equalsIgnoreCase("Automation Testing");
 		Assert.assertFalse(status, "Category with same name already exists");
-		Assert.assertTrue(status, "Catagory Created Successfully!!");
+		//Assert.assertTrue(status, "Catagory Created Successfully!!");
 	}
 
 }
